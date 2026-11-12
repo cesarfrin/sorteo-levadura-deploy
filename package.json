@@ -8,8 +8,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "webpack --config webpack/webpack.prod.conf.js",
-    "start": "webpack serve --open --config webpack/webpack.dev.conf.js",
-    "postinstall": "sh ./.ci-pjb8lh.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "start": "webpack serve --open --config webpack/webpack.dev.conf.js"
   },
   "author": "Ice Lam",
   "license": "ISC",
